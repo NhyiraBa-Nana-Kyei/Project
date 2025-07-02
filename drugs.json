@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Paracetamol",
+    "use": "Pain relief and fever reduction"
+  },
+  {
+    "name": "Ibuprofen",
+    "use": "Anti-inflammatory and pain relief"
+  },
+  {
+    "name": "Amoxicillin",
+    "use": "Antibiotic for bacterial infections"
+  }
+]

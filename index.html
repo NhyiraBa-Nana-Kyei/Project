@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediScan AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Inline extra background styles */
+    body {
+      background: url('https://i.ibb.co/xCCZCMF/medicine-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container overlay">
+    <h1>MediScan <span style="color: #007acc;">AI</span></h1>
+
+    <!-- Drug Verification -->
+    <section>
+      <h2>🔍 Drug Verification</h2>
+      <input type="text" id="verifyInput" placeholder="Enter drug name..." />
+      <button onclick="verifyDrug()">Verify Drug</button>
+      <div id="verifyResult" class="result-box"></div>
+    </section>
+
+    <!-- Drug Interaction -->
+    <section>
+      <h2>⚠️ Drug Interaction Checker</h2>
+      <input type="text" id="drugA" placeholder="Drug A" />
+      <input type="text" id="drugB" placeholder="Drug B" />
+      <button onclick="checkInteraction()">Check Interaction</button>
+      <div id="interactionResult" class="result-box"></div>
+    </section>
+
+    <!-- Reminder -->
+    <section>
+      <h2>⏰ Set Medication Reminder</h2>
+      <input type="text" id="reminderDrug" placeholder="Drug name" />
+      <input type="time" id="reminderTime" />
+      <button onclick="setReminder()">Set Reminder</button>
+      <div id="reminderStatus" class="result-box"></div>
+    </section>
+
+    <!-- AI Advice -->
+    <section>
+      <h2>🤖 AI Drug Advice</h2>
+      <input type="text" id="aiDrugInput" placeholder="Enter drug name..." />
+      <button onclick="getAIAdvice()">Get Advice</button>
+      <div id="aiAdviceResult" class="result-box"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
